@@ -1,4 +1,8 @@
-ips = ['100.122.133.105', '100.122.1033.111']
+waiting_list = ["sen", "ben", "john"]
+waiting_list.sort()
+for i, item in enumerate(waiting_list):
+    row = f"{i + 1}.{item.capitalize()}"
+    print(row)
 
-user_input = int(input("Enter the index of the IP you want: "))
-print(f"You chose {ips[user_input - 1]}")
+
+
