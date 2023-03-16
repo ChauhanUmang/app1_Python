@@ -1,8 +1,6 @@
-waiting_list = ["sen", "ben", "john"]
-waiting_list.sort()
-for i, item in enumerate(waiting_list):
-    row = f"{i + 1}.{item.capitalize()}"
-    print(row)
+temperatures = [10, 12, 14]
+file = open('../files/Day7/bug1.txt', 'w')
 
+temperatures = [str(temp) + '\n' for temp in temperatures]
 
-
+file.writelines(temperatures)
